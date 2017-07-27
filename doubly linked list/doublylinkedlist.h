@@ -1,10 +1,10 @@
-/***********************************
-*   DataStructures--Linear list    *
-*       Experiment program         *
-*    Developed by Sam Liu          *
-*         No original!!!           *
-*        Only for study            *
-************************************/
+/******************************************
+*   DataStructures--doubly linked list    *
+*           Experiment program            *
+*           Developed by Sam Liu          *
+*             Not original!!!             *
+*             Only for study              *
+*******************************************/
 
 #pragma once
 
