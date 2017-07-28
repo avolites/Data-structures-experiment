@@ -1,10 +1,13 @@
-/************************************
- *   DataStructures--Linear list    *
- *       Experiment program         *
- *    Developed by Sam Liu          *
- *         No original!!!           *
- *        Only for study            *
- ************************************/
+/*****************************************
+ *     DataStructures--Linear list       *
+ *         Experiment program            *
+ *        Developed by Sam Liu           *
+ *           Not original!!!             *
+ * Only for study and education purpose. *
+ * The author has no responsibility      *
+ *   for the errors or omissions!        *
+ *****************************************/
+
 #ifndef LINEAR_LIST_HEAD
 #define LINEAR_LIST_HEAD
 
