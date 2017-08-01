@@ -2,7 +2,6 @@
  *     DataStructures--Linked list       *
  *         Experiment program            *
  *        Developed by Sam Liu           *
- *           Not original!!!             *
  * Only for study and education purpose. *
  * The author has no responsibility      *
  *   for the errors or omissions!        *
