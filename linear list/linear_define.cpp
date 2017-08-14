@@ -110,7 +110,7 @@ bool ListInsert(SqList * l, int i, const Node * e)
 {
 	if (i<1 || i>l->length + 1)				//To check if i is legal
 		return false;
-	if (l->length >= l->listsize)			//storage room has been full, apply some new room
+	if (l->length >= l->listsize)			//storage room has been full, allocate some new room
 	{
 		l->elem = (struct Node*)realloc(l->elem, (l->listsize + LIST_INCREMENT) * sizeof(struct Node));
 		if (l->elem == NULL)					//memory overflow
