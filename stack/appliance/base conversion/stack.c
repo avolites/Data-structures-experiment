@@ -7,7 +7,7 @@
 bool InitStack(SqStack * s)
 {
 	s->base = (Element *)malloc(STACK_INIT_SIZE*ELEMENT_SIZE);
-	if (!s->base)				//fail to apply memory room
+	if (!s->base)				//fail to allocate memory room
 		return false;
 	s->top = s->base;
 	s->stacksize = STACK_INIT_SIZE;
@@ -54,11 +54,11 @@ bool GetTop(const SqStack * s, Element * e)
 }
 bool Push(SqStack * s, const Element * e)
 {
-	if (s->top - s->base >= s->stacksize)	//the stack is full,apply more room
+	if (s->top - s->base >= s->stacksize)	//the stack is full,allocate more room
 	{
 		s->base = (Element *)realloc(s->base, 
 							(STACK_INIT_SIZE + STACK_INCREMENT)*ELEMENT_SIZE);
-		if (!s->base)						//fail to apply memory room
+		if (!s->base)						//fail to allocate memory room
 			return false;
 		s->stacksize += STACK_INCREMENT;
 	}
