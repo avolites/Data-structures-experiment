@@ -116,6 +116,64 @@ void MergeList(LinkList * la, LinkList * lb, LinkList * lc)
 		}
 	}
 	pc->next = pa ? pa : pb;
+	free(*lb);
+}
+
+bool ListIsEmpty(LinkList l)
+{
+	//decide whether the list is empty
+	if (l->next)
+		return false;
+	return true;
+}
+
+int ListLength(LinkList l)
+{
+	//count the number of elements in the list
+	int count = 0;
+	Node *s = l->next;
+	while (s)
+	{
+		s = s->next;
+		count++;
+	}
+	return count;
+}
+
+void DestroyList(LinkList l)
+{
+	//destroy a linked list
+	Node *s = l;
+	while (s)
+	{
+		s = s->next;
+		free(l);
+		l = s;
+	}
+}
+
+void ClearList(LinkList l)
+{
+	//wipe all the elements in a linked list
+	Node *s = l->next, *p;
+	while (s)
+	{
+		p = s->next;
+		free(s);
+		s = p;
+	}
+	l->next = NULL;
+}
+
+void PrintList(LinkList l)
+{
+	//print all the elements in the list
+	Node *s = l->next;
+	while (s)
+	{
+		printf("%d ",s->data.a);
+		s = s->next;
+	}
 }
 
 static void Input(Node ** n)
