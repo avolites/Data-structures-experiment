@@ -65,11 +65,36 @@ void CreateList_Inverse(LinkList *l, int n);
 //post-conditoin: a linked list will be created
 void CreateList_Sequence(LinkList *l, int n);
 
-//operation:merge two lists into one
+//operation: merge two lists into one
 //pre-conditoin: la,lb,lc are three pointers to pointer to linked list
 //				 la lb and lc are in non-decrement sequence
-//post-condition:lc is the result
+//post-condition:lc is the result,la will equal to lc, lb no longer exists
 void MergeList(LinkList *la, LinkList *lb, LinkList *lc);
+
+//operation: decide whether the list is empty
+//pre-condtion: l is a linked list
+//post-condtion: return true if it is empty, false otherwise
+bool ListIsEmpty(LinkList l);
+
+//operation: count the number of elements in the list
+//pre-condition:l is a linked list
+//post-condition: return the number of elements
+int ListLength(LinkList l);
+
+//operation: destroy a linked list
+//pre-condition: l is a linked list
+//post-condtion: l will no longer exist
+void DestroyList(LinkList l);
+
+//operation: wipe all the elements in a linked list
+//pre-condition: l is a linked list
+//post-condition: all the elements will be wiped, the list still exists
+void ClearList(LinkList l);
+
+//operation: print all the elements in the list
+//pre-conditoin: l is a linked list
+//post-condtion: nothing will be changed
+void PrintList(LinkList l);
 
 //private function prototype
 
