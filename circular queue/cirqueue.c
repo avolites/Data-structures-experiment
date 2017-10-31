@@ -96,7 +96,8 @@ bool QueueTraverse(CirQueue * q, void(*visit)(Element *))
 	while (p != q->base + q->rear)
 	{
 		visit(p);
-		++p;
+		ip = (ip + 1) % MAXQSIZE;
+		p = q->base + ip;
 	}
 	return true;
 }
