@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1509240367 source:g:\work\exp4\exp4_circularqueue\cirqueue.c
+	<stdio.h>
+	<stdlib.h>
+	"cirqueue.h"
+	"internalfun.h"
+
+1509240344 g:\work\exp4\exp4_circularqueue\cirqueue.h
+	<stdbool.h>
+	"type.h"
+
+1509246093 g:\work\exp4\exp4_circularqueue\type.h
+
+1509246735 source:g:\work\exp4\exp4_circularqueue\main.c
+	<stdio.h>
+	"interface.h"
+	"internalfun.h"
+	"cirqueue.h"
+	<windows.h>
+
+1509245073 g:\work\exp4\exp4_circularqueue\internalfun.h
+	"cirqueue.h"
+
+1509245459 source:g:\work\exp4\exp4_circularqueue\internalfun.c
+	"internalfun.h"
+	<stdio.h>
+
+1509247074 source:g:\work\exp4\exp4_circularqueue\interface.c
+	"interface.h"
+	"internalfun.h"
+	"cirqueue.h"
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+
+1509244579 g:\work\exp4\exp4_circularqueue\interface.h
+	"type.h"
+
