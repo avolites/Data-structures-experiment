@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1509252890 source:g:\work\exp4\exp4_linkedqueue\main.c
+	"interface.h"
+
+1509252732 g:\work\exp4\exp4_linkedqueue\queue.h
+	<stdbool.h>
+	"type.h"
+
+1509252241 source:g:\work\exp4\exp4_linkedqueue\queue.c
+	"queue.h"
+	"internalfun.h"
+	<stdlib.h>
+	<stdio.h>
+
+1509252732 g:\work\exp4\exp4_linkedqueue\type.h
+
+1509252831 g:\work\exp4\exp4_linkedqueue\internalfun.h
+	"type.h"
+	<stdbool.h>
+
+1509252831 source:g:\work\exp4\exp4_linkedqueue\internalfun.c
+	"internalfun.h"
+	"queue.h"
+	<stdio.h>
+
+1509253146 source:g:\work\exp4\exp4_linkedqueue\interface.c
+	"interface.h"
+	"internalfun.h"
+	"queue.h"
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+
+1509252767 g:\work\exp4\exp4_linkedqueue\interface.h
+	"type.h"
+
